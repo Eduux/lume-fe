@@ -1,7 +1,7 @@
-export const dynamic = "force-dynamic";
+import { NextResponse } from "next/server";
 
 import data from "./dataset.json";
 
 export async function GET() {
-  return Response.json(data);
+  return NextResponse.json(data);
 }
