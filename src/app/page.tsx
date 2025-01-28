@@ -1,7 +1,7 @@
 import CustomersList from "./customers-list";
 
 export default async function Home() {
-  const response = await fetch("http://localhost:3000/api/data");
+  const response = await fetch(`http://localhost:${process.env.PORT}/api/data`);
 
   const data = await response.json();
 
